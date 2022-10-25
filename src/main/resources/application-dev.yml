@@ -1,0 +1,40 @@
+#服务配置
+server:
+  port: 8081
+
+#Spring
+spring:
+  #数据库连接
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://47.113.186.135:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC&serverTimezone=GMT%2B8
+    username: root
+    password: wcd0209
+    hikari:
+      max-lifetime: 500000
+  mail:
+    host: smtp.163.com
+    username: lebrwcd@163.com
+    address: lebrwcd@163.com
+    password: Wucd0209
+    default-encoding: utf-8
+    protocol: smtp
+    port: 25
+  level:
+    root: info
+    com.star: debug
+  file:
+    name: log/blog-dev.log
+
+  redis:
+    host: 47.113.186.135
+    port: 6379
+    database: 0
+    timeout: 1800000
+    password: wcd0209
+
+  thymeleaf:
+    enabled: true
+
+
+
